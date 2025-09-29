@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  server1:
+    build: ./server1
+    ports:
+      - "8081:8081"
+  server2:
+    build: ./server2
+    ports:
+      - "8082:8082"
