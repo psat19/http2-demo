@@ -18,12 +18,12 @@ services:
     expose:
       - "8081"
     volumes:
-      - ./static:/app/ui/static
+      - ./ui:/app/ui
   server2:
     build: ./server2
     expose:
       - "8082"
     volumes:
-      - ./static:/app/ui/static
+      - ./ui:/app/ui
     
       

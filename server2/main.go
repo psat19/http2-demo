@@ -12,7 +12,7 @@ func serveHTML(w http.ResponseWriter, r *http.Request) {
 }
 
 func render(w http.ResponseWriter) {
-	tmpl := template.Must(template.ParseFiles("./ui/html/index.html"))
+	tmpl := template.Must(template.ParseFiles("./ui/html/index.tmpl"))
 
 	buf := new(bytes.Buffer)
 

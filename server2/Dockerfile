@@ -1,6 +1,5 @@
 FROM golang:1.21-alpine
 WORKDIR /app
 COPY . .
-RUN go build -o server1 .
-EXPOSE 8081
-CMD ["./server1"]
+RUN go build -o server2 .
+CMD ["./server2"]
